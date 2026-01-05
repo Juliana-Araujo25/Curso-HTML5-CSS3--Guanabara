@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed;*/
+
+            /*Observação importante sobre a Shorthand do Backgrouund:
+            Ordem - color > image > position > repeat > size > attachment
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center repeat-y fixed;
+            background-size: cover;
+
+            /* Apesar de a regra incluir o SIZE na ordem, na prática não está funcionando. Então faz separada mesmo */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +38,10 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eveniet dolorum itaque atque. Corporis, autem consequuntur nesciunt ratione nemo, accusamus, laudantium asperiores illum omnis dicta cum consectetur odit quibusdam labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sequi dolorem dolores eveniet modi quae! Corporis nulla in voluptas aperiam quasi, adipisci nisi? Soluta fugiat accusamus voluptates laborum delectus possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque est iusto voluptatum sunt suscipit. Consectetur suscipit, at, fugiat alias praesentium, explicabo excepturi obcaecati corporis sapiente quas non rerum labore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eveniet dolorum itaque atque. Corporis, autem consequuntur nesciunt ratione nemo, accusamus, laudantium asperiores illum omnis dicta cum consectetur odit quibusdam labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sequi dolorem dolores eveniet modi quae! Corporis nulla in voluptas aperiam quasi, adipisci nisi? Soluta fugiat accusamus voluptates laborum delectus possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque est iusto voluptatum sunt suscipit. Consectetur suscipit, at, fugiat alias praesentium, explicabo excepturi obcaecati corporis sapiente quas non rerum labore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eveniet dolorum itaque atque. Corporis, autem consequuntur nesciunt ratione nemo, accusamus, laudantium asperiores illum omnis dicta cum consectetur odit quibusdam labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sequi dolorem dolores eveniet modi quae! Corporis nulla in voluptas aperiam quasi, adipisci nisi? Soluta fugiat accusamus voluptates laborum delectus possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque est iusto voluptatum sunt suscipit. Consectetur suscipit, at, fugiat alias praesentium, explicabo excepturi obcaecati corporis sapiente quas non rerum labore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eveniet dolorum itaque atque. Corporis, autem consequuntur nesciunt ratione nemo, accusamus, laudantium asperiores illum omnis dicta cum consectetur odit quibusdam labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sequi dolorem dolores eveniet modi quae! Corporis nulla in voluptas aperiam quasi, adipisci nisi? Soluta fugiat accusamus voluptates laborum delectus possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque est iusto voluptatum sunt suscipit. Consectetur suscipit, at, fugiat alias praesentium, explicabo excepturi obcaecati corporis sapiente quas non rerum labore.</p>
+
     </main>
 </body>
 </html>
